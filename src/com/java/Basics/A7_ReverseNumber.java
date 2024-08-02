@@ -4,39 +4,29 @@ import java.util.Scanner;
 
 public class A7_ReverseNumber {
 
-	static void reverseNumber(int a) {
+	static int reverseNumber(int x) {
 		// a = 123
 		int rev = 0;
-		
-		while (a != 0) {
-
-			int reman = a % 10;
-			
-			System.out.println("reman: "+reman);
-			
-			rev = rev * 10 + reman;
-			
-			System.out.println("rev: "+rev);
-	
-			a = a / 10;
-			
-			System.out.println(a);
-
+		while (x != 0) {
+			int remainder = x % 10;
+			rev = rev * 10 + remainder;
+			if (Integer.MAX_VALUE/10>rev || Integer.MIN_VALUE/10<rev) {
+				return 0;
+			}
+			x = x / 10;
 		}
-
-		System.out.println("Reverse Number: " + rev);
+        return rev;
 
 	}
 
 	public static void main(String[] args) {
 
-		Scanner sc = new Scanner(System.in);
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("Enter Number a :");
+//		int a = sc.nextInt();
+		int a = 1534236469;
 
-		System.out.println("Enter Number a :");
-
-		int a = sc.nextInt();
-
-		reverseNumber(a);
+		System.out.println(reverseNumber(a));
 
 	}
 

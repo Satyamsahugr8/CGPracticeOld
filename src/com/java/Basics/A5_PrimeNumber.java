@@ -81,10 +81,10 @@ public class A5_PrimeNumber {
 		//2
 
 		
-//		if (isPrime(n, 2))
-//			System.out.println("Yes");
-//		else
-//			System.out.println("No");
+		if (isPrime(n, 2))
+			System.out.println("Yes");
+		else
+			System.out.println("No");
 		
 	}
 }
