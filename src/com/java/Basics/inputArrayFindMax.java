@@ -8,6 +8,8 @@ public class inputArrayFindMax {
 		
 		Scanner sc = new Scanner(System.in);
 		
+//		java.util.Scanner sc = new Scanner(System.in);
+		
 		System.out.println("Enter the size of array - ");
 		int n = sc.nextInt();
 		int[] intArray = new int[n];

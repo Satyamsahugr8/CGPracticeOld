@@ -1,6 +1,6 @@
 package com.java.Basics;
 
-public class InpusString {
+public class InputString {
 	
 	public static void main(String[] args) {
 		
