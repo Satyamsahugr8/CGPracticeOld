@@ -1,6 +1,7 @@
-package com.javaApril;
+package com.javaApril.Thread;
 
 class Aa {
+	
 	synchronized void d1(B b) {
 		System.out.println("Inside A d1");
 

@@ -1,4 +1,4 @@
-package com.javaApril;
+package com.javaApril.Thread;
 
 class MyThreadD extends Thread {
 
@@ -23,7 +23,7 @@ public class ThreadSleepDemo {
 
 		MyThreadD t = new MyThreadD();
 		t.start();
-		t.interrupt();
+		t.interrupt();  // wakes up a sleeping/waiting thread
 
 		System.out.println("end of Main method");
 	}

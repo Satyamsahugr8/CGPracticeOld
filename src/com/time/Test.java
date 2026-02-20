@@ -13,13 +13,17 @@ class Data {
 
 public class Test {
 	public static void main(String[] args) {
+		
 		Set<Data> set1 = new HashSet<>();
 		set1.add(new Data(1));
 		set1.add(new Data(0));
+		
 		Set<Data> set2 = Collections.unmodifiableSet(set1);
 		set2.stream().findAny().get().number = 2;
+		
 		int number = set1.stream().findAny().get().number;
 		int number2 = set1.stream().findAny().get().number;
+		
 		System.out.println(number+ " "+ number2);
 	}
 }
@@ -28,8 +32,10 @@ public class Test {
 
 
 class UnmodifiableSetExample {
-    public static void main(String[] args) {
-        // Creating a mutable set
+    
+	public static void main(String[] args) {
+        
+		// Creating a mutable set
         Set<String> mutableSet = new HashSet<>();
         mutableSet.add("Apple");
         mutableSet.add("Banana");
@@ -44,7 +50,8 @@ class UnmodifiableSetExample {
         try {
             // Attempting to modify the unmodifiable set will result in an exception
             unmodifiableSet.add("Grapes"); // This will throw an UnsupportedOperationException
-        } catch (UnsupportedOperationException e) {
+        }
+        catch (UnsupportedOperationException e) {
             System.out.println("Cannot modify unmodifiable set");
         }
     }

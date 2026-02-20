@@ -19,7 +19,7 @@ public class InputString {
 			
 		}
 		
-		System.out.println("subString1 :"+subString1);
+		System.out.println("subString :"+subString1);
 		System.out.println("intValue :"+intValue);
 		
 	}

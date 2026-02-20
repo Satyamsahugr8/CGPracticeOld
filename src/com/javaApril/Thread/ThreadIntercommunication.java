@@ -1,4 +1,5 @@
-package com.javaApril;
+package com.javaApril.Thread;
+
 
 class Thread2 extends Thread {
 

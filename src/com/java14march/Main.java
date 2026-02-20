@@ -7,9 +7,10 @@ interface i1 {
 
 interface i2 {
 	int a = 8;
+	int func();
 }
 
-class imp implements i1,i2 {
+class Imp implements i1,i2 {
 
 	@Override
 	public int func() {
@@ -20,14 +21,12 @@ class imp implements i1,i2 {
 	
 }
 
- class parent {
+ class Parent {
 	 int a = 9;
-	 String name= "Staym";
-	 
-	
+	 String name = "Satyam";
  }
  
- class child extends parent {
+ class Child extends Parent {
 	 
 	 void method() {
 		 System.out.println(a);
@@ -40,38 +39,30 @@ class imp implements i1,i2 {
 public class Main {
 	
 	int searchLinear(int[] a, int value) {
-		
-		for(int i=0;i < a.length; i++) {
+		for(int i = 0; i < a.length; i++) {
 			if(value == a[i]) {
 				return i;
 			}
 		}
 		return -1;
-		
-		}
-	
-	
-	
-	static parent func(boolean b) {
-		if(b==true) {
-			return new child();
-		}
-		return new parent();
 	}
 	
+	static Parent func(boolean b) {
+		if( b == true ) {
+			return new Child();
+		}
+		return new Parent();
+	}
 	
 	public static void main(String[] args) {
 		int p = 2;
-		parent p2 = func(false);
-//		p2.a = 100;
+		Parent p2 = func(false);
+		p2.a = 100;
 		System.out.println(p);
-//		System.out.println(p2.a);
+		System.out.println(p2.a);
 		System.out.println(i);
-	
 	}
 	
 	static Integer i = new Integer(0);
-	
-
 	
 }

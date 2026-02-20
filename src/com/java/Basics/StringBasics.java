@@ -17,7 +17,8 @@ public class StringBasics {
 		System.out.println(s3==s4);
 		
 
-//		char s;
+		char s = '2';
+		System.out.println(Integer.valueOf(Character.toString(s)));
 //		String sa;
 //		int r;
 //		byte b;

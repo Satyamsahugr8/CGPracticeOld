@@ -1,5 +1,6 @@
 package com.javaApril;
 
+import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
 
@@ -23,8 +24,9 @@ public class StackExample {
 			System.out.println(i);
 			
 		}
-		Queue<Integer> d;
-		Queue<Integer> d2;
+		
+		Queue<Integer> d = new LinkedList<Integer>();
+		Queue<Integer> d2 = new LinkedList<Integer>();
 		
 			
 		

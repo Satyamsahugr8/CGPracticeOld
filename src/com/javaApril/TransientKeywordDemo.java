@@ -25,7 +25,6 @@ public class TransientKeywordDemo {
 		
 		// writing object into file
 		FileOutputStream f = new FileOutputStream("StudentT.txt");
-		
 		ObjectOutputStream out = new ObjectOutputStream(f);
 		
 		out.writeObject(s1);

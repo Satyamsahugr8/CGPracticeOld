@@ -20,7 +20,7 @@ public class Array {
 
 	}
 
-	static void DuplicateElement(int a[]) {
+	static void duplicateElement(int a[]) {
 
 		for (int i = 0; i < a.length; i++) {
 			int num = a[i];
@@ -54,23 +54,24 @@ public class Array {
 	
 	static void duplicate() {
 		int ar[]= {1,2,3,1,3,2,5,3,7,9};
-	    int maz=ar[0];
+	    int maz = ar[0];
 	    
-	    for(int i=1;i<10;i++)
-	    {
-	        if(maz<ar[i]) maz=ar[i];
+	    for(int i = 1; i < 10; i++) {
+	        if( maz < ar[i] ) 
+	        	maz = ar[i];
 	    }
+	    
 	    int arr[] = new int[maz+1];
 	    
-	    for(int i=0;i<maz;i++) {
+	    for(int i = 0; i < maz; i++) {
 		    arr[i] = 0;
-	}
-	    for(int i=0;i<maz+1;i++)
-	    {
+		}
+	    
+	    for(int i = 0; i < maz+1; i++) {
 	        arr[ar[i]]++;
 	    }
-	    for(int i=0;i<maz+1;i++)
-	    {
+	    
+	    for(int i = 0; i< maz+1; i++) {
 	        System.out.println(i +" "+ arr[i]);
 	    }
 	}

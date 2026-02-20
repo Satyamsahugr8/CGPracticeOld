@@ -9,11 +9,11 @@ public class StringConstantPool {
 		
 		String s3 = "Styla";
 		
-		System.out.println(s1 == s2 ); // false
-		// it check the reference wheather it is pointing same or not
+		System.out.println(s1 == s2); // false
+		// it check the reference weather it is pointing same or not
 		 
 		String s4 = "Styla";
-		System.out.println(s3 == s4 ); // true
+		System.out.println(s3 == s4); // true
 	}
 
 }

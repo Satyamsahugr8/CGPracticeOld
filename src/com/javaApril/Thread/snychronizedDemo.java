@@ -1,8 +1,8 @@
-package com.javaApril;
+package com.javaApril.Thread;
 
 class Display {
 
-	public static synchronized void wish(String s) throws InterruptedException {
+	public synchronized void wish(String s) throws InterruptedException {
 
 		System.out.println("Your Name : " + s);
 		Thread.sleep(2000);
